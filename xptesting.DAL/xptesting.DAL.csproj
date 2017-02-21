@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5EE80ABF-9708-45AE-AD70-CFBDEB16A94D}</ProjectGuid>
+    <ProjectGuid>{D183D521-C01F-46B6-A321-F8579BFAF63E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>xptesting.models</RootNamespace>
-    <AssemblyName>xptesting.models</AssemblyName>
+    <RootNamespace>xptesting.DAL</RootNamespace>
+    <AssemblyName>xptesting.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,11 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cadastros\Projeto.cs" />
-    <Compile Include="cadastros\TipoRequisito.cs" />
-    <Compile Include="cadastros\TipoTeste.cs" />
-    <Compile Include="cadastros\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\xptesting.models\xptesting.models.csproj">
+      <Project>{5ee80abf-9708-45ae-ad70-cfbdeb16a94d}</Project>
+      <Name>xptesting.models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
